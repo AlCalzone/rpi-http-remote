@@ -4,6 +4,7 @@ import * as fs from "fs";
 import * as path from "path";
 import * as url from "url";
 import * as http from "http";
+import {exec} from "child_process";
 
 import {promisify} from "./promises";
 
@@ -122,18 +123,28 @@ async function handleResponse(req, resp) {
     let p;
     switch (p = urlParts.pathname) {
         case "/shutdown":
-            // TODO: Herunterfahren
-            ret = "ok";
             contentType = "text/plain";
             enableCompression = false;
-            writeResponse(ret);
+            exec("shutdown -h now", (err, stdout, stderr) => {
+                if (err) {
+                    ret = "Error: " + err;
+                } else {
+                    ret = "ok";
+                }
+                writeResponse(ret);
+            });
             return;
         case "/reboot":
-            // TODO: Reboot
-            ret = "ok";
             contentType = "text/plain";
             enableCompression = false;
-            writeResponse(ret);
+            exec("reboot", (err, stdout, stderr) => {
+                if (err) {
+                    ret = "Error: " + err;
+                } else {
+                    ret = "ok";
+                }
+                writeResponse(ret);
+            });
             return;
         case "/":
             // Alles voreingestellt
