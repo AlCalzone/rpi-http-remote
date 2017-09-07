@@ -8,7 +8,7 @@ import {exec} from "child_process";
 
 import {promisify} from "./promises";
 
-const port: number = 8081;
+const port: number = 9876;
 const appRoot = path.resolve(__dirname, "..");
 
 // zlib-Funktionen in Promises kapseln

@@ -5,12 +5,13 @@
   "main": "build/main.js",
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "^8.0.27"
+    "@types/node": "^8.0.27",
+    "typescript": "^2.5.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "cd ./install && bash ./install.sh",
-    "preuninstall": "cd ./install && bash ./uninstall.sh"
+    "postinstall": "cd ./install && sudo bash ./install.sh",
+    "preuninstall": "cd ./install && sudo bash ./uninstall.sh"
   },
   "repository": {
     "type": "git",

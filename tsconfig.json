@@ -1,18 +1,18 @@
 {
-    "compileOnSave": true,          // Automatically build files in Visual Studio (Code), in combination with the watch option
+    "compileOnSave": true,
     "compilerOptions": {
-        "declaration": true,        // emit d.ts files
+        "declaration": true,
         "module": "commonjs",
         "moduleResolution": "node",
-        "noEmitOnError": false,     // dont compile faulty code
-        "noImplicitAny": false,     // set to true for stricter type checking
+        "noEmitOnError": false,
+        "noImplicitAny": false,
         "outDir": "build/",
         "removeComments": false,
         "sourceMap": false,
         "inlineSourceMap": true,
         "sourceRoot": "src/",
         "target": "es6",
-        "lib": [ "es6" ],
-        "watch": true
+        "lib": [ "es6" ]
+        //"watch": true
     }
 }

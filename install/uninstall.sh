@@ -1,4 +1,4 @@
 #!/bin/bash
-rpi-http-remote stop
+service rpi-http-remote stop
 update-rc.d -f rpi-http-remote.sh remove
-rm /etc/init.d/rpi-http-remote.sh
+rm -f /etc/init.d/rpi-http-remote.sh

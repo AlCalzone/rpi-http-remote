@@ -6,3 +6,4 @@
 /obj
 iobroker.*.tgz
 Thumbs.db
+/.vs*
