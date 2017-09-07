@@ -1,0 +1,23 @@
+{
+  "name": "rpi-http-remote",
+  "version": "0.0.1",
+  "description": "Shutdown and restart your Raspberry Pi over HTTP",
+  "main": "build/main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^8.0.27"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlCalzone/rpi-http-remote.git"
+  },
+  "author": "AlCalzone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlCalzone/rpi-http-remote/issues"
+  },
+  "homepage": "https://github.com/AlCalzone/rpi-http-remote#readme"
+}

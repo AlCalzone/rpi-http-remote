@@ -1,13 +1,3 @@
-# rpi-http-remote
-
-Shutdown and restart your Raspberry Pi over HTTP
-
-## Changelog
-
-#### 0.0.1
-* (AlCalzone) initial release
-
-## License
 The MIT License (MIT)
 
 Copyright (c) 2017 AlCalzone <d.griesel@gmx.net>

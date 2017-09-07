@@ -1,0 +1,8 @@
+/.idea
+/node_modules
+/nbproject
+/.vs
+/bin
+/obj
+iobroker.*.tgz
+Thumbs.db
