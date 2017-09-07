@@ -21,7 +21,7 @@ start() {
 }
 
 stop() {
-            echo -n "Stopping rpi-http-remote"
+            echo -n "Can't stop, won't stop"
             sudo $NODECMD $CMD stop
             RETVAL=$?
 }
